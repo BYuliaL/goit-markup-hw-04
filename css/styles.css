@@ -121,6 +121,29 @@ ul {
   color: var(--accent-color);
 }
 
+.email,
+.tel {
+  display: inline-flex;
+  align-items: center;
+}
+
+a.email::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../icons/icon-email.png");
+  background-size: contain;
+}
+
+a.tel::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../icons/icon-tel.png");
+  background-size: contain;
+}
 /*Section main page*/
 
 .section {
@@ -143,11 +166,20 @@ ul {
 }
 
 .hero {
+  height: 600px;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2f303a;
-  background-image: url(../images/hero-background.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-text {
@@ -189,6 +221,36 @@ ul {
 
 .about-work .section-list:not(:last-child) {
   margin-right: 30px;
+}
+
+.section-list::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url("../icons/antenna.png");
+  background-size: 70px;
+}
+
+.icon-clock::before {
+  background-image: url("../icons/clock.png");
+  background-size: 70px;
+}
+
+.icon-diagram::before {
+  background-image: url("../icons/diagram.png");
+  background-size: 70px;
+}
+
+.icon-astronaut::before {
+  background-image: url("../icons/astronaut.png");
+  background-size: 70px;
 }
 
 .section-list-title {
