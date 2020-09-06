@@ -29,9 +29,20 @@
             <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
           </ul>
         </nav>
-        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-
-        <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <div class="email-box">
+          <svg class="email-icon">
+            <use href="./icons/sprite.svg#icon-icon-email"></use>
+          </svg>
+          <a class="email" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </div>
+        <div class="tel-box">
+          <svg class="tel-icon">
+            <use href="./icons/sprite.svg#icon-icon-tel"></use>
+          </svg>
+          <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
       </div>
     </header>
     <div class="line"></div>
@@ -151,17 +162,73 @@
     <!--ПОДВАЛ-->
     <footer>
       <div class="conteiner footer">
-        <a href="" class="logotype"
-          >Web<span class="partlogotype-footer">Studio</span>
-        </a>
-        <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
-        <!--Связь с разработчиками сайта-->
-        <div class="footer-contacts">
-          <a class="footer-email" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <br />
-          <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+        <div class="footer-box box-adress">
+          <a href="" class="logotype"
+            >Web<span class="partlogotype-footer">Studio</span>
+          </a>
+          <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+          <!--Связь с разработчиками сайта-->
+          <div class="footer-contacts">
+            <a class="footer-email" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <br />
+            <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <p class="text-join">присоединяйтесь</p>
+          <ul class="list social-icon-list join">
+            <li class="social-icon-item">
+              <a
+                class="social-icon-link footer-link"
+                href="https://instagram.com"
+                target="_blank"
+                aria-label="ссылка инстаграма"
+              >
+                <svg class="social-icon footer-icon">
+                  <use href="./icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-item">
+              <a
+                class="social-icon-link footer-link"
+                href="https://twitter.com"
+                target="_blank"
+                aria-label="ссылка твитера"
+              >
+                <svg class="social-icon footer-icon">
+                  <use href="./icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-item">
+              <a
+                class="social-icon-link footer-link"
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="ссылка фейсбука"
+              >
+                <svg class="social-icon footer-icon">
+                  <use href="./icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-item">
+              <a
+                class="social-icon-link footer-link"
+                href="https://linkedin.com"
+                target="_blank"
+                aria-label="ссылка на линкедин"
+              >
+                <svg class="social-icon footer-icon">
+                  <use href="./icons/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
