@@ -121,10 +121,23 @@ ul {
   color: var(--accent-color);
 }
 
-.email,
-.tel {
-  display: inline-flex;
+.email-box,
+.tel-box {
+  display: flex;
   align-items: center;
+}
+
+.email-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: green;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 /*Section main page*/
@@ -331,7 +344,8 @@ ul {
 
 .actions {
   display: flex;
-  padding: 0;
+  padding-left: 32px;
+  padding-right: 32px;
   margin: 0;
 }
 
@@ -343,7 +357,6 @@ ul {
 .button-icon {
   width: 44px;
   height: 44px;
-  fill: red;
 }
 
 /*portfolio page*/
