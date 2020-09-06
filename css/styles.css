@@ -131,7 +131,7 @@ ul {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: green;
+  fill: var(--primary-text-color);
 }
 
 .tel-icon {
@@ -342,21 +342,30 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.actions {
+.social-icon-list {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin: 0;
+  justify-self: center;
+  padding: 0px 32px 30px 32px;
 }
 
-.button-staff {
-  padding: 0;
-  border: none;
+.social-icon-item:not(:last-child) {
+  margin-right: 10px;
 }
 
-.button-icon {
+.social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  background-color: gold;
+  border-radius: 50%;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 
 /*portfolio page*/
